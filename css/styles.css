@@ -1,0 +1,447 @@
+@font-face { 
+    font-family: "Futura-Medium";
+    src: url("../fonts/futura medium bt.woff2") format("woff"); /* все современные браузеры, IE9+ */    
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "Futura bold";
+    src: url("../fonts/Futura Bold.woff2") format("woff"); /* все современные браузеры, IE9+ */    
+}
+@font-face { 
+    font-family: "SegoeUI";
+    src: url("../fonts/SegoeUI.woff2") format("woff"); /* все современные браузеры, IE9+ */    
+    font-weight: 400;
+}
+@font-face { 
+    font-family: "SegoeUI bold";
+    src: url("../fonts/Segoe\ UI\ Bold.woff2") format("woff"); /* все современные браузеры, IE9+ */    
+    font-weight: 400;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    min-width: 320px;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  body {   
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  input,
+  button,
+  textarea {
+    font-size: inherit;
+    font-size: inherit;
+  }
+  input, textarea {
+    color: #e4e4e4af;
+    outline: none;
+  }
+  
+  button {
+    cursor: pointer;
+    color: inherit;
+    background-color: inherit;
+  }
+  
+  a {
+    color: inherit;
+  }
+  
+  a:link,
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  ul li {
+    list-style: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: inherit;
+    font-size: inherit;
+  }
+  
+  *,
+  *::after,
+  *::before {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+  }
+.btn {
+  width: 175px;
+  border-radius: 0 18px 0 18px;
+  font-size: 20px;
+  text-transform: uppercase;
+}  
+.btn:hover {
+   
+}
+.title {
+  font-family: "Futura bold";
+  font-size: 44px;
+  line-height: 44px;
+}
+  
+  .wrapper {
+    min-height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden;
+    font-family: "Futura-Medium";
+    font-weight: 400;   
+    color: #808285;
+  }
+  
+  .wrapper > main {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  
+  .wrapper > * {
+    min-width: 0;
+  }
+
+  .header {
+    align-items: center;
+    left: 0;    
+    right: 0;
+    top: 0;
+    z-index: 5;
+    font-size: 18px;
+  }
+
+  .header__box {  
+    margin: 0 auto;
+    font-weight: 500;
+  } 
+.login_btn:hover {
+    font-weight: 600;
+}
+.header-login-btns {
+    max-width: 120px;
+    width: 100%;
+   
+}
+  .header__content {
+    height: inherit;
+    margin: 0 auto;    
+  }
+  
+  .header__logo {
+    max-width: 220px;
+    width: 100%;    
+  }
+  
+  .header__logo img {
+    width: 100%;
+  }  
+  .header__btn img {
+    width: 100%;
+  }  
+
+  .sticky {
+    background-color: #161616;
+    height: 100px;
+    -webkit-box-shadow: 0px 15px 20px 10px #161616;
+-moz-box-shadow: 0px 15px 20px 10px #161616;
+box-shadow: 0px 15px 20px 10px #161616;
+  }
+
+a.nav-link {
+    color: #808285;
+}
+.footer-links {
+  
+}
+.copyright {
+  font-size: 12px;
+}
+.footer-links a {
+  color: #fff;
+  font-family: "SegoeUI";
+  font-size: 14px;
+}
+
+
+.slider-item {
+  height: 554px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.dots-style {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.dots-style button {
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  font-size: 0;
+  height: 17px;
+  width: 17px;
+  margin: 10px 15px 10px;
+  outline: none;
+}
+
+.dots-style li[class="slick-active"] button {
+  background: #fff;
+}
+.slider_content {
+  max-width: 522px;
+  width: 100%;
+  padding: 25px 25px 0 25px;
+  background-color: #B2BB1C;
+  color: #fff;
+  border-radius: 0 18px 0 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider_content p {
+  font-family: "SegoeUI";
+  font-size: 16px;
+  line-height: 21px;
+}
+.slider_content h2 {
+  font-family: "Futura bold";
+  margin-bottom: 32px;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+.events__box {
+  padding: 63px 30px 40px;
+
+}
+.events__card-img {
+  max-width: 120px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 26px;
+}
+.events__card-img img {
+  width: 100%;
+}
+.events__card h5 {
+  max-width: 200px;
+  font-weight: 700;
+}
+.events__text {
+  max-width: 890px;
+  margin: 51px auto 0;
+  font-family: "SegoeUI";
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.news__card-body h5 {
+  font-family: "SegoeUI bold";
+  
+  font-size: 23px;
+  line-height: 31px;
+  color: #96175D;
+}
+.news__card-body p {
+  margin-top: 29px;
+  font-family: "SegoeUI";
+  color: #808285;
+}
+.news__card-footer {
+  padding: 15px;
+  background-color: #B2BB1C;
+  border-bottom-left-radius: 18px !important;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.card {
+  border: none;
+}
+.marketplace__card-body {
+  color: #808285;
+}
+.marketplace__card-body h5{
+  margin-bottom: 18px;
+  font-family: "Futura bold";
+  font-size: 23px;
+  line-height: 23px;
+}
+.marketplace__card-body p{
+  font-family: "SegoeUI";
+}
+.regulation__card {
+  font-family: "SegoeUI";
+  font-size: 18px;
+  line-height: 24px;
+  color: #808285;
+}
+.regulation__card h5 {
+  max-width: 310px;
+  min-height: 66px;
+  margin-top: 26px;
+  margin-bottom: 15px;
+}
+.text-title {
+  margin: 0 auto;
+  font-family: "SegoeUI bold";
+  font-size: 22px;
+  line-height: 29px;
+  color: #808285;
+}
+.contacts__box {
+  background: linear-gradient(90.00deg, rgba(0, 0, 0, 0.95),rgba(0, 0, 0, 0) 100%);
+}
+.contacts__content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contacts__box h3 {
+  margin: 25px 0;  
+  font-size: 34px;
+  line-height: 20px;
+}
+
+@media (max-width: 799px) {
+  .slider-item {
+    height: 450px;
+  }
+  .title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 574px) {
+  .slider_content {
+    padding: 10px 10px 0 10px;
+  }
+  .slider_content h2 {
+    margin-bottom: 22px;
+    font-size: 20px;
+  }
+  .slider_content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .events__card {
+    margin-top: 20px;
+  }
+  .events__text {
+    margin: 31px auto 0;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .news__card-body h5 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+  .news__card-body p {
+    font-size: 16px;
+  }
+  .news__card-footer {
+    font-size: 16px;
+  }
+  .btn {
+    width: 140px;
+    font-size: 16px;
+  }
+   .title {
+    font-size: 34px;
+    line-height: 34px;
+    font-weight: 400;
+  }
+  .marketplace__card-body h5 {
+    font-size: 18px;
+  }
+  .marketplace__card-body p {
+    font-size: 16px;
+  }
+  .text-title {
+    font-size: 18px;
+  }
+  .regulation__card p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .regulation__card h5 {
+    min-height: 30px;
+  }
+  .contacts__box h3 {
+    font-size: 18px;
+  }
+  .contacts__content p{
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+    .slider_content {
+      max-width: 300px;
+    }
+    .form-group input {
+      width: 100% !important;
+    }
+}
