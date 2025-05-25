@@ -37,9 +37,7 @@
   }
   html {
     scroll-behavior: smooth;
-  }
-  
-  
+  }  
   body {   
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
@@ -58,7 +56,6 @@
     font-size: inherit;
   }
   input, textarea {
-    color: #e4e4e4af;
     outline: none;
   }
   
@@ -442,7 +439,8 @@ a.nav-link {
     .slider_content {
       max-width: 300px;
     }
-    .form-group input {
+ /*   .form-group input {
+      max-width: 300px;
       width: 100% !important;
-    }
+    } */
 }
